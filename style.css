@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+  margin:0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+  color:#4C9F4F;
+
+}
+/* Barre de navigation */
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+}
+nav h1{
+  font-size: 20px;
+}
+nav .onglets{
+  display: flex;
+  flex-wrap:wrap;
+}
+nav .onglets p{
+  font-size: 17px;
+  margin-right: 10px;
+  
+}
+nav .onglets input{
+  margin: 8px 20px;
+  padding: 15px;
+  border-radius: 30px;
+  border:none;
+  background-color: #f2f2f2;
+  outline:none;
+}
+/* Fin de la barre de navigation */
+
+/* Header */
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+header h1{
+  font-size: 50px;
+  max-width: 500px;
+  text-align:center;
+}
+
+/* Fin du header */
+
+/* Section principale */
+
+.main{
+  margin: 20px;
+  margin-top: 80px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+/* Toutes les cartes */
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+}
+.cards .card{
+  margin-right: 20px;
+  
+
+}
+.cards .card img{
+  width: 350px;
+  border-radius: 10px;
+}
+.cards .card a{
+ text-decoration: none;
+ color: black;
+
+}
+
+.cards .card .card-header{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.cards .card .card-body p{
+  margin-top: -10px;
+}
+/* Fin de toutes les cartes */
+
+@media screen and (max-width: 640px){
+  nav .onglets .link, nav h1{
+    display:none;
+  }
+  .cards .card img{
+    width: 300px;
+  }
+}
+/* Fin de la section principale */
+
+/* Pied de page */
+footer {
+  margin-top: 100px;
+  background-color: #000;
+  padding: 30px;
+  color: #fff;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+footer .social-media{
+  display: flex;
+}
+footer .social-media p{
+  margin-right: 15px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  padding: 5px;
+  text-align:center;
+  width: 20px;
+  cursor:pointer;
+}
+/* Fin du pied de page */
+
+nav .onglets .link, nav a{
+   text-decoration: none;
+   color:  black;
+  }
+nav .onglets .link{
+   border: solid;
+    border-radius: 6px;
+    border-color: #f2f2f2;
+    background-color: #f2f2f2;
+}
+
+
+ a:hover /*Apparence au survol des liens*/
+ {
+     text-decoration: none;
+     color:#9c01b2 ;
+     background-color: #9898E8;
+     transition: 0.7s;
+   
+
+ }
+ a /*Apparence au survol des liens*/
+ {
+    text-decoration: none;
+    color:#3939D6;
+    border-radius:10px;
+    
+
+ }
+.cards .card img{
+    text-decoration: none;
+     color:#A2F8A7;
+    box-shadow: 1px 3px 10px;
+}
+h2{
+    text-align: center;
+    color:#2E6031;
+   border: solid;
+    border-radius:10px;
+    box-shadow: 1px 3px 10px;
+
+}
+h1{
+    text-align: center;
+}
+h3
+{
+    text-align: left;
+  color:#3939D6;
+    border-radius:10px;
+    box-shadow: 1px 3px 10px;
+  
+}
+h4{
+     text-align: center;
+   color:#3939D6;
+    border-radius:10px;
+    box-shadow: 3px 4px 8px;
+}
+
+
+
+button{
+    background-color: #A2F8A7;
+     border-radius:10px;
+     height: 47px;
+     width: 120px;
+
+    box-shadow: 3px 4px 8px;
+ }
+ button  a:hover /*Apparence au survol des liens*/
+ {
+     text-decoration: none;
+     color:black ;
+     background-color: #A2F8A7;
+    font-family: system-ui;
+     
+
+ }
+ button a{
+  color: black; 
+  height: 47px;
+  width: 120px;
+
+  font-family: system-ui;
+ }
+.bouton_inscription button{
+  padding-bottom: 61px;
+  align-items: center;
+}
+input{
+
+    background-color: #A2F8A7;
+    color:#05890D;
+}
+
+span
+{
+   display: flex;
+  padding-left: 55px;
+  padding-top: 10px;
+ 
+}
+
+
+textarea {
+background-color: #A2F8A7;
+ color:#3939D6;
+}
+h3{
+  text-align: center;
+}
+
+
+.main table{
+ -webkit-box-shadow: -10px 0px 13px -7px , 10px 0px 13px -7px , 5px 5px 15px 5px ; 
+box-shadow: -10px 0px 13px -7px , 10px 0px 13px -7px , 5px 5px 15px 5px ;
+    border-radius: 20px!important;
+    border: none;
+    padding: 20px !important;
+
+}
+.main table tr{
+  color:#3F6840;
+  box-shadow: 1px 0px 1px;
+  
+}
+.main table td{
+  color:#3F6840;
+  box-shadow: 1px 1px 1px;
+ 
+}
